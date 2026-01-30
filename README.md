@@ -1,4 +1,5 @@
-# Lab 1 – JavaScript Conditionals & Loops
+# Lab 1 
+JavaScript Conditionals & Loops
 
 This lab includes 8 JavaScript exercises, with each exercise placed in its own file within the `js/` directory.
 
