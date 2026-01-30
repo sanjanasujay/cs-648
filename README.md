@@ -3,7 +3,7 @@
 This lab contains 8 JavaScript exercises, each implemented in a separate file inside the `js/` folder.
 
 ## How to Run
-- Open `index.html` in a browser.
+- In a browser open `index.html`.
 - **Uncomment only one `<script>` tag at a time** in `index.html`.
 - Comment out the rest to avoid multiple scripts running together.
 - Refresh the page to see the result.
