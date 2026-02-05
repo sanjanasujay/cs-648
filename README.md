@@ -1,4 +1,5 @@
 CS-648
 
 
-Lab 1 in folder
+M1 Lab 1 in folder 
+M2 Lab1 in folder
