@@ -184,8 +184,26 @@ var showEmployee = function(list) {
 showEmployee(employees);
 
 
-// Write a JavaScript function to filter false, null, 0 and blank values from an array.
+// 15. Write a JavaScript function to filter false, null, 0 and blank values from an array.
 // Test Data: console.log(filterValues([58, '', 'abcd', true, null, false, 0]));
 // Expected Result: [58, "abcd", true]
-// Write a JavaScript function to get a random item from an array. So if I create a numeric array with 10 numbers and then pass that array into my function, the function should randomly return one of those numbers.
+function filterValues(arr) {
+  return arr.filter(function(item) {
+    return item !== false && item !== null && item !== 0 && item !== "";
+  });
+}
+
+console.log(filterValues([58, '', 'abcd', true, null, false, 0]));
+// Expected: [58, "abcd", true]
+
+
+// 16. Write a JavaScript function to get a random item from an array. So if I create a numeric array with 10 numbers and then pass that array into my function, the function should randomly return one of those numbers.
+function getRandomItem(arr) {
+  var index = Math.floor(Math.random() * arr.length);
+  return arr[index];
+}
+
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+console.log(getRandomItem(numbers));
+
 // Write a JavaScript function to get the largest number from a numeric array.
