@@ -163,8 +163,7 @@ for (var item of movies) {
 }
 
 
-// Create a string array called employees using literal notation and populate the array with several employee names. Then, create an anonymous function called showEmployee. The function should accept a parameter. Call this function, passing in the employees array into the function as a parameter. Make sure to display the result in the console window. Within the function, loop through the passed in array and display the result so that it looks exactly like this in the console window:
-
+// 14. Create a string array called employees using literal notation and populate the array with several employee names. Then, create an anonymous function called showEmployee. The function should accept a parameter. Call this function, passing in the employees array into the function as a parameter. Make sure to display the result in the console window. Within the function, loop through the passed in array and display the result so that it looks exactly like this in the console window:
 // Employees:
 
 // ZAK
@@ -172,6 +171,18 @@ for (var item of movies) {
 // MARK
 // FRED
 // SALLY
+
+var employees = ["Zak", "Jessica", "Mark", "Fred", "Sally"];
+
+var showEmployee = function(list) {
+  console.log("Employees:\n");
+  for (var name of list) {
+    console.log(name.toUpperCase());
+  }
+};
+
+showEmployee(employees);
+
 
 // Write a JavaScript function to filter false, null, 0 and blank values from an array.
 // Test Data: console.log(filterValues([58, '', 'abcd', true, null, false, 0]));
