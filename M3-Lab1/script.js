@@ -100,8 +100,24 @@ for (var movie of reverseSorted) {
 }
 
 
-// Copy the code from step 9. Use an array function to return just the last item in the array and display it within the console window.
-// Copy the code from step 10. Remove the previous method and this time use a method to return just the first item in the array and display it within the console window.
+// 10. Copy the code from step 9. Use an array function to return just the last item in the array and display it within the console window.
+var movies = ["Inception", "Interstellar", "The Dark Knight", "Arrival", "Spirited Away", "The Matrix", "Blade Runner 2049"];
+var leastFavMovies = ["Movie 43", "Cats", "The Last Airbender"];
+movies = movies.concat(leastFavMovies);
+
+var lastMovie = movies.slice(-1)[0];
+console.log(lastMovie);
+
+
+// 11. Copy the code from step 10. Remove the previous method and this time use a method to return just the first item in the array and display it within the console window.
+var movies = ["Inception", "Interstellar", "The Dark Knight", "Arrival", "Spirited Away", "The Matrix", "Blade Runner 2049"];
+var leastFavMovies = ["Movie 43", "Cats", "The Last Airbender"];
+movies = movies.concat(leastFavMovies);
+
+var firstMovie = movies.shift();
+console.log(firstMovie);
+
+
 // Programmatically retrieve the movies in your array that you do not like and return their indices. Then, using those indices, programmatically add movies that you do like.
 // Create a multi-dimensional array that contains your 5 favorite movies and their ranking from 1-5. The array should look something like this:
 
