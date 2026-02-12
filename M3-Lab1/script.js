@@ -33,11 +33,32 @@ delete movies[0];
 console.log(movies);
 
 
-// Declare an array called movies using literal notation. Then, assign one of your favorite movies to each index in the array until you have 7 total movies in your array. Now, use a for/in loop to iterate through the array and display each movie within the console window.
+// 5.Declare an array called movies using literal notation. Then, assign one of your favorite movies to each index in the array until you have 7 total movies in your array. Now, use a for/in loop to iterate through the array and display each movie within the console window.
+var movies = ["Inception", "Interstellar", "The Dark Knight", "Arrival", "Spirited Away", "The Matrix", "Blade Runner 2049"];
 
-// Copy the code from step 5. Now, use a for/of loop to iterate through the array and display each movie within the console window.
-// Copy the code from step 5. Using the for/of loop to iterate through the array, display each movie within the console window in a sorted view.
-// Copy the code from step 5. Under the existing array, create a new array called leastFavMovies. Populate the array with the 3 movies that you regret watching. Display both arrays within the console window so that it’s formatted to look like this (note the spacing, you must include that too):
+for (var index in movies) {
+  console.log(movies[index]);
+}
+
+
+// 6. Copy the code from step 5. Now, use a for/of loop to iterate through the array and display each movie within the console window.
+var movies = ["Inception", "Interstellar", "The Dark Knight", "Arrival", "Spirited Away", "The Matrix", "Blade Runner 2049"];
+
+for (var movie of movies) {
+  console.log(movie);
+}
+
+// 7. Copy the code from step 5. Using the for/of loop to iterate through the array, display each movie within the console window in a sorted view.
+var movies = ["Inception", "Interstellar", "The Dark Knight", "Arrival", "Spirited Away", "The Matrix", "Blade Runner 2049"];
+
+var sortedMovies = movies.slice().sort();
+
+for (var movie of sortedMovies) {
+  console.log(movie);
+}
+
+
+// 8. Copy the code from step 5. Under the existing array, create a new array called leastFavMovies. Populate the array with the 3 movies that you regret watching. Display both arrays within the console window so that it’s formatted to look like this (note the spacing, you must include that too):
 
 // Movies I like:
 
@@ -52,6 +73,20 @@ console.log(movies);
 // Movie 2
 // Movie 3
 // …
+var movies = ["Inception", "Interstellar", "The Dark Knight", "Arrival", "Spirited Away", "The Matrix", "Blade Runner 2049"];
+var leastFavMovies = ["Movie 43", "Cats", "The Last Airbender"];
+
+console.log("Movies I like:\n");
+for (var movie of movies) {
+  console.log(movie);
+}
+
+console.log("\nMovies I regret watching:\n");
+for (var badMovie of leastFavMovies) {
+  console.log(badMovie);
+}
+
+
 
 // Copy the code from step 8. Now, use the concat() method to merge the two arrays together into a single array called movies. Use the console window to display the list in reverse sorted
 // Copy the code from step 9. Use an array function to return just the last item in the array and display it within the console window.
