@@ -88,7 +88,18 @@ for (var badMovie of leastFavMovies) {
 
 
 
-// Copy the code from step 8. Now, use the concat() method to merge the two arrays together into a single array called movies. Use the console window to display the list in reverse sorted
+// 9. Copy the code from step 8. Now, use the concat() method to merge the two arrays together into a single array called movies. Use the console window to display the list in reverse sorted
+var movies = ["Inception", "Interstellar", "The Dark Knight", "Arrival", "Spirited Away", "The Matrix", "Blade Runner 2049"];
+var leastFavMovies = ["Movie 43", "Cats", "The Last Airbender"];
+
+movies = movies.concat(leastFavMovies);
+
+var reverseSorted = movies.slice().sort().reverse();
+for (var movie of reverseSorted) {
+  console.log(movie);
+}
+
+
 // Copy the code from step 9. Use an array function to return just the last item in the array and display it within the console window.
 // Copy the code from step 10. Remove the previous method and this time use a method to return just the first item in the array and display it within the console window.
 // Programmatically retrieve the movies in your array that you do not like and return their indices. Then, using those indices, programmatically add movies that you do like.
