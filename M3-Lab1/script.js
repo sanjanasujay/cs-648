@@ -206,4 +206,9 @@ function getRandomItem(arr) {
 var numbers = [1,2,3,4,5,6,7,8,9,10];
 console.log(getRandomItem(numbers));
 
-// Write a JavaScript function to get the largest number from a numeric array.
+// 17. Write a JavaScript function to get the largest number from a numeric array.
+function getLargestNumber(arr) {
+  return Math.max.apply(null, arr);
+}
+
+console.log(getLargestNumber([10, 4, 88, 2, 99, 30])); // 99
