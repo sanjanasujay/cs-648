@@ -10,15 +10,34 @@
 <body>
     <div id="content"></div>
 
-    <script>
-        ReactDOM.render(
-            React.createElement(
-                'div', 
-                {title: 'OuterDiv'},
-                'Hello, React!'
-            ),
-           document.getElementById('content')
-        );
+    <script type="text/babel">
+        //simpler than create element
+        //all you need to do is download babel compiler and add type as text/babel in script tag
+        const element = (
+            <ul style={{'color': 'blue', 'fontSize': '24px'}}>
+                <li>Sanjana Sujay</li>
+                <li>Sandhya Sujay</li>
+                <li>Sakshi Rao</li>
+                </ul>
+        )
+
+        // const element = React.createElement(
+        //         'div', 
+        //         {title: 'OuterDiv'},
+        //         'Hello, React!'
+        //     )
+        //     ReactDOM.render(
+        //         element, //what you want to render
+        //         document.getElementById('content') // where you want to render it
+        //     );
+        // ReactDOM.render(
+        //     React.createElement(
+        //         'div', 
+        //         {title: 'OuterDiv'},
+        //         'Hello, React!'
+        //     ),
+        //    document.getElementById('content')
+        // );
       
     </script>
 </body>
