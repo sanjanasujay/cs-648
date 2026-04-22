@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our First React Page</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script type="text/babel">
+        //simpler than create element
+        //all you need to do is download babel compiler and add type as text/babel in script tag
+        const element = (
+            <ul style={{'color': 'blue', 'fontSize': '24px'}}>
+                <li>Sanjana Sujay</li>
+                <li>Sandhya Sujay</li>
+                <li>Sakshi Rao</li>
+                </ul>
+        )
+</script>
+       
+        <script type="text/babel">
+         //I CAN ALSO DO THIS
+        let name1 = 'Smita';
+        let name2 = 'Sanjana';
+        const element2 = (
+            <ul style={{'color': 'blue', 'fontSize': '24px'}}>
+                <li>{name1}</li>
+                <li>{name2.toUpperCase}</li>
+                </ul>
+            )
+            </script>
+
+
+        // const element = React.createElement(
+        //         'div', 
+        //         {title: 'OuterDiv'},
+        //         'Hello, React!'
+        //     )
+        //     ReactDOM.render(
+        //         element, //what you want to render
+        //         document.getElementById('content') // where you want to render it
+        //     );
+        // ReactDOM.render(
+        //     React.createElement(
+        //         'div', 
+        //         {title: 'OuterDiv'},
+        //         'Hello, React!'
+        //     ),
+        //    document.getElementById('content')
+        // );
+      
+    
+</body>
+</html>
