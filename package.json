@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "babel practice/src --presets=@babel/preset-react --out-dir practice/public",
     "watch": "babel practice/src --presets=@babel/preset-react --out-dir practice/public --watch --verbose"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanjanasujay/cs-648.git"
@@ -23,5 +23,8 @@
     "@babel/cli": "^7.28.6",
     "@babel/core": "^7.29.0",
     "@babel/preset-react": "^7.28.5"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
