@@ -45,18 +45,18 @@ export default class EmployeeList extends React.Component {
       employees: [
         {
           id: 1,
-          name: 'Rashmi',
+          name: 'Sanjana',
           extension: 101,
-          email: 'rashmi@example.com',
+          email: 'sanjana@example.com',
           title: 'Developer',
-          dateHired: '2024-01-10',
+          dateHired: '2024-01-11',
           currentStatus: 'Active',
         },
         {
           id: 2,
-          name: 'John',
+          name: 'Sally',
           extension: 102,
-          email: 'john@example.com',
+          email: 'sally@example.com',
           title: 'Manager',
           dateHired: '2023-08-15',
           currentStatus: 'Active',
