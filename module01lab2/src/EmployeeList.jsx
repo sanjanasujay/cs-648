@@ -18,13 +18,13 @@ class EmployeeRow extends React.Component {
     const { employee, deleteEmployee } = this.props;
     return (
       <tr>
-        <td>{employee.name}</td>
-        <td>{employee.extension}</td>
-        <td>{employee.email}</td>
-        <td>{employee.title}</td>
-        <td>{employee.dateHired}</td>
-        <td>{employee.currentStatus}</td>
-        <td>
+        <td style={{ padding: '10px 16px' }}>{employee.name}</td>
+        <td style={{ padding: '10px 16px' }}>{employee.extension}</td>
+        <td style={{ padding: '10px 16px' }}>{employee.email}</td>
+        <td style={{ padding: '10px 16px' }}>{employee.title}</td>
+        <td style={{ padding: '10px 16px' }}>{employee.dateHired}</td>
+        <td style={{ padding: '10px 16px' }}>{employee.currentStatus}</td>
+        <td style={{ padding: '10px 16px' }}>
           <Button variant="danger" onClick={this.toggleModal}>X</Button>
           <Modal show={this.state.modalVisible} onHide={this.toggleModal}>
             <Modal.Header closeButton>
@@ -48,16 +48,16 @@ function EmployeeTable(props) {
   ));
 
   return (
-    <table border="1">
+    <table border="1" style={{ borderCollapse: 'collapse', width: '100%' }}>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Extension</th>
-          <th>Email</th>
-          <th>Title</th>
-          <th>Date Hired</th>
-          <th>Status</th>
-          <th>Delete</th>
+          <th style={{ padding: '10px 16px' }}>Name</th>
+          <th style={{ padding: '10px 16px' }}>Extension</th>
+          <th style={{ padding: '10px 16px' }}>Email</th>
+          <th style={{ padding: '10px 16px' }}>Title</th>
+          <th style={{ padding: '10px 16px' }}>Date Hired</th>
+          <th style={{ padding: '10px 16px' }}>Status</th>
+          <th style={{ padding: '10px 16px' }}>Delete</th>
         </tr>
       </thead>
       <tbody>{employeeRows}</tbody>
